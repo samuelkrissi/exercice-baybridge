@@ -1,6 +1,14 @@
 .App{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.shopping-cart{
+    position: fixed;
+    left: 2px;
+    margin: 0!important;
+    width: 30%;
+    display: block;
+    top: 5px;
 }
