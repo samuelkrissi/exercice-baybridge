@@ -111,6 +111,10 @@ function App() {
                 </div>
           </Route>
       
+          <Route path="/cart">
+          <span className="shopping-cart">
+              <Cart />
+              </span>          </Route>
           <Route path="/products/:id">
             <ProductDetails />
           </Route>

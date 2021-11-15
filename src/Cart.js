@@ -1,6 +1,8 @@
 import "./Cart.css";
 import CartContext from "./CartContext";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
+
 
 function Cart() {
   const { cart } = useContext(CartContext);
@@ -48,6 +50,7 @@ function Cart() {
   );
 
   return (
+      <>
     <div className="cart">
   <h1>My cart</h1>
       {cartItem}
@@ -61,7 +64,12 @@ function Cart() {
         </button>
         <button className="button">Order</button>
       </div>
+
     </div>
+    <Link to={`/cart`}><h5>go to the cart</h5></Link>
+    <Link to={`/`}><h5>go to home</h5></Link>
+
+    </>
   );
 }
 
