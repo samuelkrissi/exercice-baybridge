@@ -5,10 +5,12 @@ import Cart from "./Cart";
 import Products from "./Products";
 import ProductDetails from "./ProductDetails";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import useLocalStorage from ".//useLocalStorage";
+
 
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useLocalStorage("Shopping Cart",[]);
   const [totalItem, setTotalItem] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
   const [products, setProducts] = useState([]);
